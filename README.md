@@ -1,5 +1,7 @@
 # Bachin T-A4 Pen Plotter — FluidNC Port
 
+
+
 Replacement firmware for the Bachin T-A4 pen plotter using
 [FluidNC](https://github.com/bdring/FluidNC) on the stock ESP32-WROOM-32D.
 It looks like there is also an older version of the Bachin using a different board? Be aware.
@@ -32,11 +34,17 @@ It looks like there is also an older version of the Bachin using a different boa
 
 End stops are normally-open, active LOW (pulled to GND when pressed).
 
-## Flashing
+# Flashing the easy way
+GPIO0 (pin 25) needs to be shorted in order to enter the boot mode.
+
+Open & flash using fluidnc webflash https://installer.fluidnc.com/
+
+
+# Flashing (the hard way)
 
 ### Prerequisites
 - Python 3 with `platformio` and `esptool`
-- ESP32 in boot mode: hold BOOT, press EN, release EN, release BOOT
+- ESP32 in boot mode: Short GPIO0 to GND the release.
 
 ### Build & flash (WiFi variant)
 ```bash
