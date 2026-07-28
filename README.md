@@ -6,6 +6,9 @@ Replacement firmware for the Bachin T-A4 pen plotter using
 [FluidNC](https://github.com/bdring/FluidNC) on the stock ESP32-WROOM-32D.
 It looks like there is also an older version of the Bachin using a different board? Be aware.
 
+<img width="3472" height="4624" alt="wiredMess" src="https://github.com/user-attachments/assets/f15fe79d-d32d-4f8e-9917-c31c6e756913" />
+Note, you don't need to solder any wire (maybe just a jump wire to short GPIO0). Pictured is my board while I was using an external serial adaptor that provided power to the esp32 (before I identified the faulty voltage regulator issue)
+
 ## Hardware
 
 | Component | Detail |
@@ -17,6 +20,8 @@ It looks like there is also an older version of the Bachin using a different boa
 | End stops | 2× NO microswitches (X: GPIO35, Y: GPIO34) |
 
 ## Pinout
+
+<img width="1440" height="773" alt="image" src="https://github.com/user-attachments/assets/8b7cd1a6-7243-411e-b7eb-9aac2b64c9f8" />
 
 ```
               ESP32-WROOM-32D
